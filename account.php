@@ -52,16 +52,16 @@
                     </div>
                     <div class="profile-details">
                         <div class="profile-details-list">
-                            <h6>Full Name: </h6><p><?php ?></p>
+                            <h6>Full Name: </h6><p style="color:#FF2A2C;"><?php  echo $_SESSION["fname"] ?? $_SESSION["F"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?></p>
                         </div>
                         <div class="profile-details-list">
-                            <h6>Email: </h6><p><?php ?></p>
+                            <h6>Email: </h6><p style="color:#FF2A2C;"><?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us"?></p>
                         </div>
                         <div class="profile-details-list">
-                            <h6>Phone Number: </h6><p><?php ?></p>
+                            <h6>Phone Number: </h6><p style="color:#FF2A2C;"><?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?></p>
                         </div>
                         <div class="profile-details-list">
-                            <h6>Password: </h6><p><?php ?></p>
+                            <h6>Password: </h6><p style="color:#FF2A2C;"><?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?></p>
                         </div>
                     </div>
                 </div>
@@ -136,4 +136,5 @@
     </div>
 </body>
 
+        </div>
 </html>
