@@ -16,7 +16,7 @@
     <header class="" id="wrapper">
         <?php include_once "navigation.php" ?>
     </header>
-    <div class="grid-container">
+    <div class="grid-container container">
         <div class="" id="product-container">
 
             <div class="" id="product-list">
@@ -30,39 +30,40 @@
                     </div>
                 </div>
                 <hr />
-                <div class="product-group">
-                    <div id="product-card">
-                        <div class="product-img-header">
-                            <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/Layer256-1.png" height="100" width="100" alt="Product Image" />
+                <div class="row"> 
+                    <div class="col-md-6" id="product-Card">
+                    <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/Layer256-1.png" height="100" width="100" alt="Product Image" />
                             <div class="product-card-text">
-                                <h6>Product Name</h6>
-                                <p><s>$300</s> $700</p>
+                                <h6 class="">Pizza</h6>
+                                <p class="">description</p>
+                                <p class=""><s>$300</s> $700</p>
                             </div>
-                        </div>
-                        <form>
-                            <input type="number" name="product-number" id="product-number" class="product-input" min="1" value="1" />
-                            <button type="submit" class="order-btn" id="submit" name="submit">Remove</button>
-                        </form>
                     </div>
-                </div>
+                    <div class="col-md-6">
+                    <div>
+                            <input type="number" name="product-number" id="product-number" class="product-input" min="1" value="1" />
+                            <button type="submit" class="order-btn" id="submit" name="submit">Order</button>
+                        </div>
+                    </div>
+            </div>
                 <hr />
 
-                <div class="product-group">
-                    <div id="product-card">
-                        <div class="product-img-header">
-                            <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/Layer256-1.png" height="100" width="100" alt="Product Image" />
+                <div class="row"> 
+                    <div class="col-md-6" id="product-Card">
+                    <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/Layer256-1.png" height="100" width="100" alt="Product Image" />
                             <div class="product-card-text">
-                                <h6>Product Name</h6>
-                                <p>description</p>
-                                <p><s>$300</s> $700</p>
+                                <h6 class="">Pizza</h6>
+                                <p class="">description</p>
+                                <p class=""><s>$300</s> $700</p>
                             </div>
-                        </div>
-                        <form>
-                            <input type="number" name="product-number" id="product-number" class="product-input" min="1" value="1" />
-                            <button type="submit" class="order-btn" id="submit" name="submit">Remove</button>
-                        </form>
                     </div>
-                </div>
+                    <div class="col-md-6">
+                    <div>
+                            <input type="number" name="product-number" id="product-number" class="product-input" min="1" value="1" />
+                            <button type="submit" class="order-btn" id="submit" name="submit">Order</button>
+                        </div>
+                    </div>
+            </div>
                 <hr />
                 <br />
                 <div class="cart-action" id="cart-action">

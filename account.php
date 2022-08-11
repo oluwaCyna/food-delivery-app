@@ -17,8 +17,9 @@
     <header class="" id="wrapper">
         <?php include_once "navigation.php" ?>
     </header>
-    <div class="account-grid-container account-page-height">
-        <div class="other-section account-list">
+    <div class="container"> 
+        <div class="account-page-height row">
+        <div class="other-section account-list col-md-6">
             <h5 class="account-link" onclick="showProfile();"><a class="account-anchor-link" href="#profile">My Profile</a></h5>
             <h5 class="account-link" onclick="showUpdateProfile();"><a class="account-anchor-link" href="#update-profile">Update Profile</a></h5>
             <h5 class="account-link" onclick="showOrderHistory();"><a class="account-anchor-link" href="#order-history">Order History</a></h5>
@@ -26,7 +27,7 @@
         </div>
         <div class="" id="product-container">
 
-            <div class="" id="">
+            <div class=" col-md-6" id="">
                 <div class="profile-head-container">
                     <h2>My Account</h2>
                     <div class="line-group">
@@ -52,16 +53,16 @@
                     </div>
                     <div class="profile-details">
                         <div class="profile-details-list">
-                            <h6>Full Name: </h6><p style="color:#FF2A2C;"><?php  echo $_SESSION["fname"] ?? $_SESSION["F"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?></p>
+                            <h6 style=" color: black; font-weight: 700;">Full Name: </h6><p style="color:#FF2A2C;"><?php  echo $_SESSION["fname"] ?? $_SESSION["F"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?></p>
                         </div>
                         <div class="profile-details-list">
-                            <h6>Email: </h6><p style="color:#FF2A2C;"><?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us"?></p>
+                            <h6 style=" color: black; font-weight: 700;">Email: </h6><p style="color:#FF2A2C;"><?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us"?></p>
                         </div>
                         <div class="profile-details-list">
-                            <h6>Phone Number: </h6><p style="color:#FF2A2C;"><?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?></p>
+                            <h6 style=" color: black; font-weight: 700;">Phone Number: </h6><p style="color:#FF2A2C;"><?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?></p>
                         </div>
                         <div class="profile-details-list">
-                            <h6>Password: </h6><p style="color:#FF2A2C;"><?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?></p>
+                            <h6 style=" color: black; font-weight: 700;">Password: </h6><p style="color:#FF2A2C;"><?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?></p>
                         </div>
                     </div>
                 </div>
@@ -69,22 +70,22 @@
                     <form method="post" action="">
                     <div class="form-grp">
                     <label for="update-fullname">Full Name:</label>
-                    <input type="text" class="account-input" id="update-fullname" name="update-fullname" value="<?php ?>" >
+                    <input type="text" class="account-input" id="update-fullname" name="update-fullname" value="<?php  echo $_SESSION["fname"] ?? $_SESSION["F"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?>" >
                     </div>
 
                     <div class="form-grp">
                     <label for="update-email">Email:</label>
-                    <input type="text" class="account-input" id="update-email" name="update-email" value="<?php ?>" >
+                    <input type="text" class="account-input" id="update-email" name="update-email" value="<?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us"?>" >
                     </div>
 
                     <div class="form-grp">
                     <label for="update-phone-number">Phone Number:</label>
-                    <input type="text" class="account-input" id="update-phone-number" name="update-phone-number" value="<?php ?>" >
+                    <input type="text" class="account-input" id="update-phone-number" name="update-phone-number" value="<?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?>" >
                     </div>
 
                     <div class="form-grp">
                     <label for="update-password">Password:</label>
-                    <input type="text" class="account-input" id="update-password" name="update-password" value="<?php  ?>" >
+                    <input type="text" class="account-input" id="update-password" name="update-password" value="<?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?>" >
                     </div>
 
                     <div class="form-grp">
@@ -132,9 +133,7 @@
                
             </div>
         </div>
-
     </div>
+ </div>
 </body>
-
-        </div>
 </html>

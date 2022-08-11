@@ -155,41 +155,41 @@ class SignUp {
 
 
     // GETTING USER INFOMATION FROM THE DATABASE;
-    
-class LoginInfo extends login
-{
-    protected $host = "localhost";
-    protected $root = "root";
-    protected $password = "";
-    protected $dbase = "Food_App";
-    
 
-
-    public $conn_to = null;
-    public function __construct()
+    class LoginInfo extends login
     {
-            // initialize connection property;
-            $this->conn_to = mysqli_connect( $this->host, $this->root, $this->password, $this->dbase);
-            if($this->conn_to->connect_error){
-             echo "FAIL".$this->conn_to->connect_error;
+        protected $host = "localhost";
+        protected $root = "root";
+        protected $password = "";
+        protected $dbase = "Food_App";
+        
+    
+    
+        public $conn_to = null;
+        public function __construct()
+        {
+                // initialize connection property;
+                $this->conn_to = mysqli_connect( $this->host, $this->root, $this->password, $this->dbase);
+                if($this->conn_to->connect_error){
+                 echo "FAIL".$this->conn_to->connect_error;
+                }
+                // echo "...!";
+        }
+    
+        // SELECTING USER INFOMATION FROM THE DATABASE; WHERE email=' $search_email' AND password=' $search_pass' ; 
+        public function SELECT()
+        {
+            $search_pass = $_SESSION["search_pass"];
+            $search_email = $_SESSION["search_email"];
+            
+            $QueryuserInfo = "SELECT * FROM regisration_info WHERE email='$search_email' AND password='$search_pass' " ;
+            $result = $this->conn_to->query($QueryuserInfo);
+    
+            if($result->num_rows > 0){
+                return $result; 
+            }else{
+                return false;
             }
-            // echo "...!";
-    }
-
-    // // SELECTING USER INFOMATION FROM THE DATABASE;
-    // public function select()
-    // {
-    //     if(empty($val)){
-    //         echo " ";
-    //     } else {
-    //                 $UserQuery = "SELECT * FROM regisration_info";
-    //     $result = $this->conn_to->query($UserQuery);
-    //     if($result->num_rows > 0){
-    //         return $result; 
-    //     }else{
-    //         return false;
-    //     }
-    //     }
-
-    // }
-}
+            }
+    
+        } 
