@@ -155,6 +155,17 @@ class SignUp {
 
 
     // GETTING USER INFOMATION FROM THE DATABASE;
+<<<<<<< HEAD
+=======
+    
+class LoginInfo extends login
+{
+    protected $host = "localhost";
+    protected $root = "root";
+    protected $password = "";
+    protected $dbase = "resturant";
+    
+>>>>>>> 349462593545d604f4e52343b92d7fcde976e953
 
     class LoginInfo extends login
     {

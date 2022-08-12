@@ -36,8 +36,9 @@ style="
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="market.php">Market</a></li>
-            <li class="nav-item"><a class="nav-link" href="cart.php">Cart</a></li>
+            <!-- <li class="nav-item"><a class="nav-link"  data-bs-toggle="modal" data-bs-target="#cart-modal">Cart</a></li> -->
             <li class="nav-item"><a class="nav-link" href="account.php">My Account</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.php">Cart</a></li>
             <li class="nav-item"><a class="nav-link" href="regisration.php">Register</a></li>
             <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li> 
           </li>
@@ -50,3 +51,10 @@ style="
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 </html>
+
+    </nav>
+</div>
+
+
+
+

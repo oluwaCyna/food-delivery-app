@@ -17,123 +17,133 @@
     <header class="" id="wrapper">
         <?php include_once "navigation.php" ?>
     </header>
-    <div class="container"> 
-        <div class="account-page-height row">
-        <div class="other-section account-list col-md-6">
+
+
+
+ 
+ <div class="container col-md-12 mt-5">
+  <div class="row">
+  <div class="account-page-height col-md-6">
+        <div class="other-section account-list ">
             <h5 class="account-link" onclick="showProfile();"><a class="account-anchor-link" href="#profile">My Profile</a></h5>
             <h5 class="account-link" onclick="showUpdateProfile();"><a class="account-anchor-link" href="#update-profile">Update Profile</a></h5>
             <h5 class="account-link" onclick="showOrderHistory();"><a class="account-anchor-link" href="#order-history">Order History</a></h5>
             <h5 class="account-link" onclick="showTrackOrder();"><a class="account-anchor-link" href="#track-order">Track Delivery</a></h5>
         </div>
-        <div class="" id="product-container">
 
-            <div class=" col-md-6" id="">
-                <div class="profile-head-container">
-                    <h2>My Account</h2>
-                    <div class="line-group">
-                        <hr class="line" />
-                        <hr class="line2" />
-                        <hr class="line2" />
-                        <hr class="line2" />
-                    </div>
-                </div>
-                <div class="profile-head-container">
-                    <h5 id="account-title"></h5>
-                    <div class="line-group">
-                        <hr class="line" />
-                        <hr class="line2" />
-                        <hr class="line2" />
-                        <hr class="line2" />
-                    </div>
-                </div>
-                <hr />
-                <div class="profile" id="profile">
-                    <div class="profile-picture">
-                        <img src="img/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg" class="profile-img" width="300" height="300" alt="Profile Pictture" />
-                    </div>
-                    <div class="profile-details">
-                        <div class="profile-details-list">
-                            <h6 style=" color: black; font-weight: 700;">Full Name: </h6><p style="color:#FF2A2C;"><?php  echo $_SESSION["fname"] ?? $_SESSION["F"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?></p>
-                        </div>
-                        <div class="profile-details-list">
-                            <h6 style=" color: black; font-weight: 700;">Email: </h6><p style="color:#FF2A2C;"><?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us"?></p>
-                        </div>
-                        <div class="profile-details-list">
-                            <h6 style=" color: black; font-weight: 700;">Phone Number: </h6><p style="color:#FF2A2C;"><?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?></p>
-                        </div>
-                        <div class="profile-details-list">
-                            <h6 style=" color: black; font-weight: 700;">Password: </h6><p style="color:#FF2A2C;"><?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="update-profile" id="update-profile">
-                    <form method="post" action="">
-                    <div class="form-grp">
-                    <label for="update-fullname">Full Name:</label>
-                    <input type="text" class="account-input" id="update-fullname" name="update-fullname" value="<?php  echo $_SESSION["fname"] ?? $_SESSION["F"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?>" >
-                    </div>
+    </div>
 
-                    <div class="form-grp">
-                    <label for="update-email">Email:</label>
-                    <input type="text" class="account-input" id="update-email" name="update-email" value="<?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us"?>" >
-                    </div>
+    
+    <div class=" col-md-6" id="product-container">
 
-                    <div class="form-grp">
-                    <label for="update-phone-number">Phone Number:</label>
-                    <input type="text" class="account-input" id="update-phone-number" name="update-phone-number" value="<?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?>" >
-                    </div>
-
-                    <div class="form-grp">
-                    <label for="update-password">Password:</label>
-                    <input type="text" class="account-input" id="update-password" name="update-password" value="<?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?>" >
-                    </div>
-
-                    <div class="form-grp">
-                        <button type="submit" class="order-btn" id="update-profile-btn" name="update-profile-btn">Update</button>
-                    </div>
-                    </form>
-                </div>
-                <div class="order-history" id="order-history">
-                    <table>
-                        <tr>
-                            <th>S/N</th>
-                            <th>Order Number</th>
-                            <th>Order Amount</th>
-                            <th>Order Status</th>
-                        </tr>
-                        <tr>
-                            <td>1.</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2.</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="track-order" id="track-order">
-                    <form>
-                    <div class="form-grp">
-                    <label for="order-number">Order Number:</label>
-                    <input type="text" class="account-input" id="order-number" name="order-number" value="<?php  ?>" >
-                    </div>
-
-                    <div class="form-grp">
-                        <button type="submit" class="order-btn" id="update-profile-btn" name="update-profile-btn">Update</button>
-                    </div>
-                    </form>
-                    <div id="map2"></div>
-                </div>
-
-                <hr />
-               
+<div class="" id="">
+    <div class="profile-head-container">
+        <h2>My Account</h2>
+        <div class="line-group">
+            <hr class="line" />
+            <hr class="line2" />
+            <hr class="line2" />
+            <hr class="line2" />
+        </div>
+    </div>
+    <div class="profile-head-container">
+        <h5 id="account-title"></h5>
+        <div class="line-group">
+            <hr class="line" />
+            <hr class="line2" />
+            <hr class="line2" />
+            <hr class="line2" />
+        </div>
+    </div>
+    <hr />
+    <div class="profile" id="profile">
+        <div class="profile-picture">
+            <img src="img/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg" class="profile-img" width="300" height="300" alt="Profile Pictture" />
+        </div>
+        <div class="profile-details">
+            <div class="profile-details-list">
+                <h6 style=" color: black; font-weight: 700;">Full Name: </h6><p style="color:#FF2A2C;"><?php  echo $_SESSION["fname"] ?? $_SESSION["F"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?></p>
+            </div>
+            <div class="profile-details-list">
+                <h6 style=" color: black; font-weight: 700;">Email: </h6><p style="color:#FF2A2C;"><?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us"?></p>
+            </div>
+            <div class="profile-details-list">
+                <h6 style=" color: black; font-weight: 700;">Phone Number: </h6><p style="color:#FF2A2C;"><?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?></p>
+            </div>
+            <div class="profile-details-list">
+                <h6 style=" color: black; font-weight: 700;">Password: </h6><p style="color:#FF2A2C;"><?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?></p>
             </div>
         </div>
     </div>
- </div>
+    <div class="update-profile" id="update-profile">
+        <form method="post" action="">
+        <div class="form-grp">
+        <label for="update-fullname">Full Name:</label>
+        <input type="text" class="account-input" id="update-fullname" name="update-fullname" value="<?php  echo $_SESSION["fname"] ?? $_SESSION["F"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?>" >
+        </div>
+
+        <div class="form-grp">
+        <label for="update-email">Email:</label>
+        <input type="text" class="account-input" id="update-email" name="update-email" value="<?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us"?>" >
+        </div>
+
+        <div class="form-grp">
+        <label for="update-phone-number">Phone Number:</label>
+        <input type="text" class="account-input" id="update-phone-number" name="update-phone-number" value="<?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?>" >
+        </div>
+
+        <div class="form-grp">
+        <label for="update-password">Password:</label>
+        <input type="text" class="account-input" id="update-password" name="update-password" value="<?php echo $_SESSION["email"] ?? $_SESSION["E"] ?? "Need to signUp for account creation! Seems you  have no account with Us" ?>" >
+        </div>
+
+        <div class="form-grp">
+            <button type="submit" class="order-btn" id="update-profile-btn" name="update-profile-btn">Update</button>
+        </div>
+        </form>
+    </div>
+    <div class="order-history" id="order-history">
+        <table>
+            <tr>
+                <th>S/N</th>
+                <th>Order Number</th>
+                <th>Order Amount</th>
+                <th>Order Status</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="track-order" id="track-order">
+        <form>
+        <div class="form-grp">
+        <label for="order-number">Order Number:</label>
+        <input type="text" class="account-input" id="order-number" name="order-number" value="<?php  ?>" >
+        </div>
+
+        <div class="form-grp">
+            <button type="submit" class="order-btn" id="update-profile-btn" name="update-profile-btn">Update</button>
+        </div>
+        </form>
+        <div id="map2"></div>
+    </div>
+
+    <hr />
+   
+</div>
+</div>
+    </div>
+  </div>
+
 </body>
 </html>
